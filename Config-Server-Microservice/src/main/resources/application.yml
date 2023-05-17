@@ -1,0 +1,19 @@
+server:
+  port: 8097
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nihalg04/microservice-config-server
+          clone-on-start: true
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+    org.hibernate: DEBUG
+  file:
+    name: insurance_web_application.log
